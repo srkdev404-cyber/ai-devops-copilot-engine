@@ -1,16 +1,17 @@
 from agents.common_llm import query_llm
 
-def run_rca(logs, context=""):
+
+def run_rca(logs: str) -> str:
     prompt = f"""
-You are a DevOps expert.
+You are a senior SRE.
 
-Analyze the logs and find:
-1. Root cause
-2. Impact
-3. Fix
+Analyze production logs.
 
-Context:
-{context}
+Respond ONLY in this format:
+
+Root Cause: <one line>
+Impact: <system/user impact>
+Fix: <clear actionable fix>
 
 Logs:
 {logs}
