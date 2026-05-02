@@ -1,5 +1,3 @@
-{
-  "error": "FileNotFoundError: config.json not found",
-  "service": "ecs-task",
-  "status": "failed"
-}
+Step 3/5: Build
+Error: missing config.json
+Pipeline failed
