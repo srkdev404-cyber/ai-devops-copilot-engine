@@ -1,1 +1,5 @@
-
+{
+  "ecs_service": "taskrouter",
+  "desired_count": 1,
+  "autoscaling": false
+}
